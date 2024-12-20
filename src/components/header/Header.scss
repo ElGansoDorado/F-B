@@ -56,6 +56,8 @@ header
         color: #BAE249;
         text-align: center;
 
+        transition: color 0.2s ease-in-out;
+
         &:hover
         {
             color: #91AC46;

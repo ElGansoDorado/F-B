@@ -1,0 +1,42 @@
+.footer
+{
+    &-list
+    {
+        min-height: 60px;
+
+        background-color: #0B1919;
+
+        &-networks
+        {
+            min-height: 60px;
+            width: 200px;
+
+            margin: 0 auto;
+
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            color: #899D9D;
+        }
+    }
+
+    &-year
+    {
+        min-height: 20px;
+        background-color: #1D2F30;
+
+
+        & p
+        {
+            height: 100%;
+            width: 100px;
+
+            text-align: center;
+            margin: 0 auto;
+
+            color: #899D9D;
+            font: 400 12px/16px 'Open Sans', 'p1_regular';
+        }
+    }
+}
