@@ -1,0 +1,26 @@
+.menu-button
+{
+    font: 400 16px/24px 'Open Sans', 'p1_regular';
+
+    & a
+    {
+        color: #FFF;
+        padding: 7px;
+
+        &:hover
+        {
+            color: #BAE249;
+        }
+
+        &:focus
+        {
+            padding: 6px;
+            border: 1px solid #83A440;
+        }
+
+        &:active
+        {
+            color: #688B05;
+        }
+    }
+}
