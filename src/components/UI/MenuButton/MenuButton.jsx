@@ -1,4 +1,4 @@
-import './MenuButton.scss'
+import './MenuButton.css'
 
 function MenuButton({children, sectionRef})
 {
