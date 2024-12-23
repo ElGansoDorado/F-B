@@ -1,3 +1,7 @@
+section {
+  margin-bottom: 60px;
+}
+
 #catalog {
   height: 490px;
   width: 100%;
@@ -59,4 +63,21 @@
 }
 .catalog-info .catalog-button:disabled {
   color: #899D9D;
+}
+
+#gallery {
+  height: 555px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.carousel-slider {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  color: #FFF;
 }/*# sourceMappingURL=InfoSection.css.map */

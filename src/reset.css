@@ -87,11 +87,6 @@ legend {
     display: block;
 }
 
-html,
-body {
-    height: 100%;
-}
-
 [data-tooltip] {
     position: relative; /* Относительное позиционирование */
 }

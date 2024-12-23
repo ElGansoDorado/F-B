@@ -1,0 +1,49 @@
+.carusel-item {
+  max-height: 485px;
+  min-height: 485px;
+  min-width: 255px;
+  max-width: 255px;
+  border: 1px solid #0B1919;
+}
+.carusel-item-img {
+  min-height: 180px;
+  max-height: 180px;
+  width: 100%;
+  padding: 30px 16px;
+  background-color: #0B1919;
+}
+.carusel-item-text {
+  height: 305px;
+  padding: 16px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carusel-item-text h3 {
+  color: #FFF;
+}
+.carusel-item-text p {
+  margin: 8px 0 16px;
+  color: #899D9D;
+}
+.carusel-item-text button {
+  width: 145px;
+  height: 45px;
+  padding: 10.5px 28.5px;
+  color: #BAE249;
+  border: 1px solid #BAE249;
+  transition: color 0.2s ease-in-out;
+}
+.carusel-item-text button:hover {
+  color: #0B1919;
+  background-color: #BAE249;
+}
+.carusel-item-text button:active {
+  color: #0B1919;
+  background-color: #688B05;
+  border-color: #688B05;
+}
+.carusel-item-text button:disabled {
+  color: #899D9D;
+  border-color: #899D9D;
+}/*# sourceMappingURL=carouselItem.css.map */
