@@ -4,7 +4,6 @@
     min-height: 485px;
     min-width: 255px;
     max-width: 255px;
-
     border: 1px solid #0B1919;
 
     &-img
@@ -15,6 +14,22 @@
 
         padding: 30px 16px;
         background-color: #0B1919;
+
+        position: relative;
+
+        p
+        {
+            padding: 5px;
+
+            color: #899D9D;
+            border: 1px solid #899D9D;
+            border-color: #899D9D;
+            border-radius: 50%;
+
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
     }
 
     &-text

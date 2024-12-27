@@ -11,6 +11,17 @@
   width: 100%;
   padding: 30px 16px;
   background-color: #0B1919;
+  position: relative;
+}
+.carusel-item-img p {
+  padding: 5px;
+  color: #899D9D;
+  border: 1px solid #899D9D;
+  border-color: #899D9D;
+  border-radius: 50%;
+  position: absolute;
+  left: 10px;
+  top: 10px;
 }
 .carusel-item-text {
   height: 305px;
@@ -46,4 +57,4 @@
 .carusel-item-text button:disabled {
   color: #899D9D;
   border-color: #899D9D;
-}/*# sourceMappingURL=carouselItem.css.map */
+}/*# sourceMappingURL=CarouselItem.css.map */

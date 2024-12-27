@@ -84,27 +84,3 @@ section
         }
     }
 }
-
-#gallery
-{
-    height: 555px;
-}
-
-.carousel
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    margin-bottom: 26px;
-
-    &-slider
-    {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-
-        color: #FFF;
-    }
-}
-
