@@ -8,7 +8,7 @@ import carouselImg_4 from "../../../assets/img_c4.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
-import CarouselItem from "../carouselItem/carouselItem"
+import CarouselItem from "../carouselItem/CarouselItem"
 import { useRef, useState } from "react"
 
 export default function CarouselSection()
