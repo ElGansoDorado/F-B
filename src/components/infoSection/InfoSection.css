@@ -2,15 +2,25 @@ section {
   margin-bottom: 60px;
 }
 
-#catalog {
+.catalog {
   height: 490px;
   width: 100%;
-  background: #616868;
+  position: relative;
 }
-#catalog img {
+.catalog img {
   min-height: 490px;
-  max-height: 100%;
+  max-height: 490px;
   width: 100%;
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+.catalog .box {
+  position: relative;
+  z-index: 1;
 }
 
 .box {
@@ -28,12 +38,12 @@ section {
 }
 .catalog-info h2 {
   font-family: Cormorant;
-  font: 700 60px/60px "Cormorant", from-font;
+  font: 700 60px/60px "Cormorant";
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
 .catalog-info p {
-  font-weight: 400 16px/24px "Open Sans", from-font;
+  font-weight: 400 16px/24px "Open Sans";
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   margin: 22px 0;

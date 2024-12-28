@@ -1,7 +1,8 @@
 .menu-button {
-  font: 400 16px/24px "Open Sans", "p1_regular";
+  font: 400 16px/24px "Open Sans";
 }
 .menu-button a {
+  width: 100%;
   color: #FFF;
   padding: 7px;
   transition: color 0.2s ease-in-out;

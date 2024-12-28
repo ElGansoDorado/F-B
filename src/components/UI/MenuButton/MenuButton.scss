@@ -1,9 +1,10 @@
 .menu-button
 {
-    font: 400 16px/24px 'Open Sans', 'p1_regular';
+    font: 400 16px/24px 'Open Sans';
 
     & a
     {
+        width: 100%;
         color: #FFF;
         padding: 7px;
 

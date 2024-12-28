@@ -1,5 +1,6 @@
-#gallery {
-  height: 555px;
+.gallery {
+  height: 565px;
+  background-color: #1D2F30;
 }
 
 .carousel {

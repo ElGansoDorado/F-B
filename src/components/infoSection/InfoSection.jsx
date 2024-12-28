@@ -3,6 +3,7 @@ import "./InfoSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
+import BackImg from "../../assets/back.jpg"
 import CarouselSection from "./carouselSection/CarouselSection"
 
 function InfoSection()
@@ -10,6 +11,7 @@ function InfoSection()
     return(
         <main>
             <section id="catalog" className="catalog">
+                <img src={BackImg} alt="" />
                 <div className="box">
                     <div className="catalog-info">
                         <h2>Крупнейшая коллекция природных артефактов</h2>
