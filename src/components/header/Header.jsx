@@ -6,14 +6,15 @@ import MenuButton from '../UI/MenuButton/MenuButton'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
-
+import search from '../../assets/search.svg'
+import logIn from '../../assets/log-in.svg'
 
 function Header()
 {
     return(
     <header id="top">
         <div>
-            <div className=''>
+            <div>
                 <div className="logo">
                     <a href="#top"><img src={logo} alt="logo" /></a>
                 </div>
@@ -30,10 +31,12 @@ function Header()
 
             <div className="icons">
                 <a href='#'>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
+                    <img src={search} alt="search" />
+                    {/* <span>f<FontAwesomeIcon icon={faMagnifyingGlass}/></span> */}
                 </a>
                 <a href="#">
-                    <FontAwesomeIcon icon={faRightToBracket} />
+                    <img src={logIn} alt="logIn" />
+                    {/* <span><FontAwesomeIcon icon={faRightToBracket}/></span> */}
                 </a>
             </div>
         </div>

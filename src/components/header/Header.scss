@@ -13,10 +13,9 @@ header
 
         & div
         {
-            width: 50%;
 
             display: flex;
-            gap: 128px;
+            gap: 124px;
         }
     }
 }
@@ -33,32 +32,37 @@ header
 
     display: flex;
     align-items: center;
-    gap: 64px;
+    gap: 60px;
 
     color: #FFF;
 }
 
+
 .icons
 {
-    width: 106px;
+    max-height: 100%;
     
     display: flex;
+    justify-content: right;
     gap: 64px;
-    
+
     & a
     {
-        height: 24px;
-        width: 24px;
-        
         padding: 4px;
         color: #BAE249;
         text-align: center;
 
         transition: color 0.2s ease-in-out;
 
+        img 
+        {
+            width: 24px;
+            height: 24px;
+        }
+
         &:hover
         {
-            color: #91AC46;
+            filter: brightness(75%);
         }
 
         &:focus
@@ -69,7 +73,7 @@ header
 
         &:active
         {
-            color: #688B05;
+            filter: brightness(60%);
         }
     }
 }
