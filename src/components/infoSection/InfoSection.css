@@ -73,4 +73,59 @@ section {
 }
 .catalog-info .catalog-button:disabled {
   color: #899D9D;
+}
+
+.about {
+  height: 575px;
+}
+.about-title {
+  font: 700 italic 48px/48px Cormorant;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.about-container {
+  height: 493px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 74% 22.4%;
+  gap: 40px;
+}
+.about-container-img {
+  padding: 16px;
+  background-color: #0B1919;
+}
+.about-container-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-container-text {
+  padding: 16px;
+  background-color: #BAE249;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about-container-text h3 {
+  color: #1D2F30;
+  font: 700 24px/36px Cormorant;
+  text-align: left;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+.about-container-text p {
+  color: #506829;
+  font: 400 16px/24px "Open Sans";
+  text-align: justify;
+  margin-top: 8px;
+}
+.about-container-text button {
+  color: #0B1919;
+  font: 700 16px/22px "Open Sans";
+  text-align: left;
+}
+.about-container-text button:hover {
+  color: #688B05;
 }/*# sourceMappingURL=InfoSection.css.map */
