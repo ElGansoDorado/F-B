@@ -1,4 +1,4 @@
-section
+.m-b-60
 {
     margin-bottom: 60px;
 }
@@ -175,6 +175,69 @@ section
                     color: #688B05;
                 }
             }
+        }
+    }
+}
+
+.contacts
+{
+    height: 465px;
+
+    img 
+    {
+        min-height: 465px;
+        max-height: 465px;
+        width: 100%;
+
+        filter: brightness(50%);
+        object-fit: cover;
+
+        position: absolute;
+    }
+
+    div
+    {
+        position: relative;
+        z-index: 1;
+    }
+
+    h2
+    {
+        color: #FFF;
+        font: 700 italic 48px/48px "Cormorant";
+        margin-bottom: 16px;
+    }
+
+    p
+    {
+        width: 825px;
+        color: #FFF;
+        font: 400 16px/24px 'Open Sans';
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &-input
+    {
+        display: flex;
+        flex-direction: column;
+
+        input
+        {
+            height: 45px;
+            width: 350px;
+            margin-bottom: 24px;
+            padding: 11.5px 16px;
+
+            background-color: #FFFFFF;
+        }
+
+        button
+        {
+            height: 45px;
+            width: 145px;
+            background-color: #BAE249;
+            color: #0B1919;
         }
     }
 }

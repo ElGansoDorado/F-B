@@ -1,4 +1,4 @@
-section {
+.m-b-60 {
   margin-bottom: 60px;
 }
 
@@ -128,4 +128,50 @@ section {
 }
 .about-container-text button:hover {
   color: #688B05;
+}
+
+.contacts {
+  height: 465px;
+}
+.contacts img {
+  min-height: 465px;
+  max-height: 465px;
+  width: 100%;
+  filter: brightness(50%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+.contacts div {
+  position: relative;
+  z-index: 1;
+}
+.contacts h2 {
+  color: #FFF;
+  font: 700 italic 48px/48px "Cormorant";
+  margin-bottom: 16px;
+}
+.contacts p {
+  width: 825px;
+  color: #FFF;
+  font: 400 16px/24px "Open Sans";
+  text-align: left;
+  margin-bottom: 24px;
+}
+.contacts-input {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-input input {
+  height: 45px;
+  width: 350px;
+  margin-bottom: 24px;
+  padding: 11.5px 16px;
+  background-color: #FFFFFF;
+}
+.contacts-input button {
+  height: 45px;
+  width: 145px;
+  background-color: #BAE249;
+  color: #0B1919;
 }/*# sourceMappingURL=InfoSection.css.map */

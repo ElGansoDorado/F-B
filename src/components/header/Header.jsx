@@ -21,7 +21,7 @@ function Header()
                     <MenuButton sectionRef={'#catalog'}>Каталог</MenuButton>
                     <MenuButton sectionRef={'#gallery'}>Галерея</MenuButton>
                     <MenuButton sectionRef={'#about'}>О лаборатории</MenuButton>
-                    <MenuButton sectionRef={'#'}>Контакты</MenuButton>
+                    <MenuButton sectionRef={'#contacts'}>Контакты</MenuButton>
                 </ul>
 
             </div>

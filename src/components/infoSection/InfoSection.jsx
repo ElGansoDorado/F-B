@@ -11,7 +11,7 @@ function InfoSection()
 {
     return(
         <main>
-            <section id="catalog" className="catalog">
+            <section id="catalog" className="catalog m-b-60">
                 <img src={BackImg} alt="" />
                 <div className="box">
                     <div className="catalog-info">
@@ -24,7 +24,7 @@ function InfoSection()
 
             <CarouselSection/>
 
-            <section id="about" className="about">
+            <section id="about" className="about m-b-60">
                 <div className="box">
                     <h2 className="about-title">Новые артефакты</h2>
                     
@@ -45,7 +45,19 @@ function InfoSection()
                 </div>
             </section>
 
-            <section id="contacts" className="contacts"></section>
+            <section id="contacts" className="contacts">
+                <img src={BackImg} alt="" />
+                <div className="box">
+                    <h2>Помочь проекту</h2>
+                    <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
+                    
+                    <div className="contacts-input">
+                        <input type="text" placeholder="Имя"/>
+                        <input type="email" placeholder="Email"/>
+                        <button>Отправить</button>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }

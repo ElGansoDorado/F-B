@@ -40,7 +40,7 @@ export default function CarouselSection()
 
 
     return(
-        <section id="gallery" className="gallery">
+        <section id="gallery" className="gallery m-b-60">
                 <div className="box">
                     <div ref={scrolBar} className="carousel">
                         <CarouselItem
