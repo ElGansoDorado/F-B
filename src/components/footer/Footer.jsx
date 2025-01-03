@@ -3,7 +3,7 @@ import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faRightToBracket } from '@fortawesome/free-solid-svg-icons'
 
-import MenuButton from '../UI/MenuButton/MenuButton'
+import MenuButton from '../UI/button/menuButton/MenuButton'
 
 function Footer()
 {

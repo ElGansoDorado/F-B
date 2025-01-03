@@ -36,7 +36,7 @@
   width: 688px;
   color: #FFF;
 }
-.catalog-info h2 {
+.catalog-info h1 {
   font-family: Cormorant;
   font: 700 60px/60px "Cormorant";
   -webkit-text-decoration-skip-ink: none;
@@ -168,10 +168,4 @@
   margin-bottom: 24px;
   padding: 11.5px 16px;
   background-color: #FFFFFF;
-}
-.contacts-input button {
-  height: 45px;
-  width: 145px;
-  background-color: #BAE249;
-  color: #0B1919;
 }/*# sourceMappingURL=InfoSection.css.map */

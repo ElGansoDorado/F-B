@@ -11,7 +11,7 @@ import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import CarouselItem from "../carouselItem/CarouselItem"
 import { useRef, useState } from "react"
 
-export default function CarouselSection()
+function CarouselSection()
 {
     const [caruselValue, setCaruselValue] = useState(1)
     const scrolBar = useRef()
@@ -102,3 +102,5 @@ export default function CarouselSection()
             </section>
     )
 }
+
+export default CarouselSection

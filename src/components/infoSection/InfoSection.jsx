@@ -1,7 +1,7 @@
 import "./InfoSection.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import CustomButton from "../UI/button/customButton/CustomButton"
 
 import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
@@ -54,7 +54,7 @@ function InfoSection()
                     <div className="contacts-input">
                         <input type="text" placeholder="Имя"/>
                         <input type="email" placeholder="Email"/>
-                        <button>Отправить</button>
+                        <CustomButton isFill={true}>Отправить</CustomButton>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,7 @@
 import "./carouselItem.css"
 
+import CustomButton from "../../UI/button/customButton/CustomButton"
+
 function CarouselItem({children, numberImg, carouselImg, title})
 {
     return(
@@ -14,7 +16,7 @@ function CarouselItem({children, numberImg, carouselImg, title})
                     <p>{children}</p>
                 </div>
 
-                <button>Подробнее</button>
+                <CustomButton isFill={false}>Подробнее</CustomButton>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import search from '../../assets/search.svg'
 import logIn from '../../assets/log-in.svg'
 import logo from '../../assets/logo.svg'
 
-import MenuButton from '../UI/MenuButton/MenuButton'
+import MenuButton from '../UI/button/menuButton/MenuButton'
 
 function Header()
 {
