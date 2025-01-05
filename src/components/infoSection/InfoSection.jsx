@@ -1,6 +1,7 @@
 import "./InfoSection.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import CustomButton from "../UI/button/customButton/CustomButton"
 
 import BackImg from "../../assets/back.jpg"

@@ -2,7 +2,8 @@
   max-width: 145px;
   max-height: 45px;
   padding: 10.5px 28.5px;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   color: #0B1919;
   background-color: #BAE249;
   font-weight: 700;
@@ -22,7 +23,8 @@
   max-width: 145px;
   max-height: 45px;
   padding: 10.5px 28.5px;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.4s ease-in-out;
+  transition: background 0.4s ease-in-out;
   color: #BAE249;
   border: 1px solid #BAE249;
 }
