@@ -162,11 +162,4 @@
 .contacts-input {
   display: flex;
   flex-direction: column;
-}
-.contacts-input input {
-  height: 45px;
-  width: 350px;
-  margin-bottom: 24px;
-  padding: 11.5px 16px;
-  background-color: #FFFFFF;
 }/*# sourceMappingURL=InfoSection.css.map */

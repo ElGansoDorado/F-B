@@ -1,0 +1,52 @@
+.custom-input-box
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-input-error
+{
+    margin-left: 16px;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16.34px;
+    text-align: left;
+
+    color: #FF0000;
+}
+
+.custom-input
+{
+    height: 45px;
+    width: 350px;
+    margin-bottom: 24px;
+    padding: 11.5px 16px;
+
+    background-color: #FFFFFF;
+
+    transition: color 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out;
+
+    &:hover
+    {
+        color: #0B1919;
+        background-color: #899D9D;
+
+        &::placeholder
+        {
+            color: #FFF;
+        }
+    }
+
+    
+    &:focus
+    {
+        border: 1px solid #00FF00;
+    }
+}
+
+.error
+{
+    border: 1px solid #FF0000;
+}

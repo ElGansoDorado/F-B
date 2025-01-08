@@ -3,6 +3,7 @@ import "./InfoSection.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import CustomButton from "../UI/button/customButton/CustomButton"
+import CustomInput from "../UI/input/customInput/CustomInput"
 
 import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
@@ -51,12 +52,12 @@ function InfoSection()
                 <div className="box">
                     <h2>Помочь проекту</h2>
                     <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
-                    
-                    <div className="contacts-input">
-                        <input type="text" placeholder="Имя"/>
-                        <input type="email" placeholder="Email"/>
+                    <form action="" className="contacts-input">
+                        <CustomInput type="text" placeholder="Имя" isCorrect={false}/>
+                        <CustomInput type="email" placeholder="Email" isCorrect={false}/>
+
                         <CustomButton isFill={true}>Отправить</CustomButton>
-                    </div>
+                    </form>
                 </div>
             </section>
         </main>
