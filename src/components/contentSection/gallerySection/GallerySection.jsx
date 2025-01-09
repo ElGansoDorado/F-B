@@ -1,4 +1,4 @@
-import "./CarouselSection.css"
+import "./GallerySection.css"
 
 import carouselImg_1 from "../../../assets/img_c1.png"
 import carouselImg_2 from "../../../assets/img_c2.png"

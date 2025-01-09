@@ -2,13 +2,13 @@ import './App.css'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
-import InfoSection from './components/infoSection/InfoSection'
+import ContentSection from './components/contentSection/ContentSection'
 
 function App() {
   return (
     <>
       <Header/>
-      <InfoSection/>
+      <ContentSection/>
       <Footer/>
     </>
   )

@@ -1,4 +1,4 @@
-import "./InfoSection.css"
+import "./ContentSection.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
@@ -8,7 +8,7 @@ import StatusMessage from "../UI/message/statusMessage/statusMessage"
 
 import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
-import CarouselSection from "./carouselSection/CarouselSection"
+import GallerySection from "./gallerySection/GallerySection"
 import { useState } from "react"
 
 function InfoSection()
@@ -41,7 +41,7 @@ function InfoSection()
                 </div>
             </section>
 
-            <CarouselSection/>
+            <GallerySection/>
 
             <section id="about" className="about m-b-60">
                 <div className="box">
