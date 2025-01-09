@@ -2,9 +2,11 @@ import "./ContentSection.css"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
+
 import CustomButton from "../UI/button/customButton/CustomButton"
 import CustomInput from "../UI/input/customInput/CustomInput"
 import StatusMessage from "../UI/message/statusMessage/statusMessage"
+import ArrowButton from "../UI/button/arrowButton/ArrowButton"
 
 import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
@@ -27,16 +29,15 @@ function InfoSection()
         )
     }
 
-
     return(
         <main>
             <section id="catalog" className="catalog m-b-60">
-                <img src={BackImg} alt="" />
+                <img className="img-back" src={BackImg} alt="imgBack" />
                 <div className="box">
                     <div className="catalog-info">
                         <h1>Крупнейшая коллекция природных артефактов</h1>
                         <p>Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
-                        <button className="catalog-button">Исследовать <FontAwesomeIcon icon={faArrowRight} /></button>
+                        <ArrowButton isBlack={false}>Исследовать</ArrowButton>
                     </div>
                 </div>
             </section>
@@ -55,10 +56,10 @@ function InfoSection()
                         <div className="about-container-text">
                             <div>
                                 <h3>Kurische Nehrung 24</h3>
-                                <p>Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. <br/> <br/> Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
+                                <p className="p">Вот вам яркий пример современных тенденций - начало повседневной работы по формированию позиции выявляет срочную потребность методов управления процессами. <br/> <br/> Есть над чем задуматься: представители современных социальных резервов своевременно верифицированы.</p>
                             </div>
 
-                            <button>Читать далее <FontAwesomeIcon icon={faArrowRight} /></button>
+                            <ArrowButton isBlack={true}>Читать далее</ArrowButton>
                         </div>
                     </div>
                 </div>

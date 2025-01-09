@@ -2,12 +2,23 @@
   margin-bottom: 60px;
 }
 
+.box {
+  height: 100%;
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
 .catalog {
   height: 490px;
   width: 100%;
   position: relative;
 }
-.catalog img {
+.catalog .img-back {
   min-height: 490px;
   max-height: 490px;
   width: 100%;
@@ -18,20 +29,6 @@
   top: 0;
   z-index: 0;
 }
-.catalog .box {
-  position: relative;
-  z-index: 1;
-}
-
-.box {
-  height: 100%;
-  width: 1140px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .catalog-info {
   width: 688px;
   color: #FFF;
@@ -47,32 +44,6 @@
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
   margin: 22px 0;
-}
-.catalog-info .catalog-button {
-  padding: 4px;
-  font-family: Open Sans;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 21.79px;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
-  cursor: pointer;
-  color: #BAE249;
-  transition: color 0.2s ease-in-out;
-}
-.catalog-info .catalog-button:hover {
-  color: #91AC46;
-}
-.catalog-info .catalog-button:focus {
-  padding: 3px;
-  border: 1px solid #83A440;
-}
-.catalog-info .catalog-button:active {
-  color: #688B05;
-}
-.catalog-info .catalog-button:disabled {
-  color: #899D9D;
 }
 
 .about {
@@ -115,20 +86,11 @@
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
-.about-container-text p {
+.about-container-text .p {
   color: #506829;
   font: 400 16px/24px "Open Sans";
   text-align: justify;
   margin-top: 8px;
-}
-.about-container-text button {
-  color: #0B1919;
-  font: 700 16px/22px "Open Sans";
-  text-align: left;
-  transition: color 0.4s ease-in-out;
-}
-.about-container-text button:hover {
-  color: #688B05;
 }
 
 .contacts {
@@ -142,10 +104,6 @@
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-}
-.contacts div {
-  position: relative;
-  z-index: 1;
 }
 .contacts h2 {
   color: #FFF;
@@ -162,4 +120,4 @@
 .contacts-input {
   display: flex;
   flex-direction: column;
-}/*# sourceMappingURL=InfoSection.css.map */
+}/*# sourceMappingURL=ContentSection.css.map */

@@ -1,0 +1,108 @@
+.arrow-button {
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  font: 700 16px/21.8px "Open Sans";
+  transition: color 0.2s ease-in-out;
+  position: relative;
+}
+.arrow-button.green {
+  color: #BAE249;
+}
+.arrow-button.green > .arrow > div,
+.arrow-button.green > .arrow > div::after,
+.arrow-button.green > .arrow > div::before {
+  background-color: #BAE249;
+}
+.arrow-button.green:hover {
+  color: #91AC46;
+}
+.arrow-button.green:hover > .arrow > div,
+.arrow-button.green:hover > .arrow > div::after,
+.arrow-button.green:hover > .arrow > div::before {
+  background-color: #91AC46;
+}
+.arrow-button.green:active {
+  color: #688B05;
+}
+.arrow-button.green:active > .arrow > div,
+.arrow-button.green:active > .arrow > div::after,
+.arrow-button.green:active > .arrow > div::before {
+  background-color: #688B05;
+}
+.arrow-button.green:disabled {
+  color: #899D9D;
+}
+.arrow-button.green:disabled > .arrow > div,
+.arrow-button.green:disabled > .arrow > div::after,
+.arrow-button.green:disabled > .arrow > div::before {
+  background-color: #899D9D;
+}
+.arrow-button.black {
+  color: #0B1919;
+}
+.arrow-button.black > .arrow > div,
+.arrow-button.black > .arrow > div::after,
+.arrow-button.black > .arrow > div::before {
+  background-color: #0B1919;
+}
+.arrow-button.black:hover {
+  color: #688B05;
+}
+.arrow-button.black:hover > .arrow > div,
+.arrow-button.black:hover > .arrow > div::after,
+.arrow-button.black:hover > .arrow > div::before {
+  background-color: #688B05;
+}
+.arrow-button.black:active {
+  color: #91AC46;
+}
+.arrow-button.black:active > .arrow > div,
+.arrow-button.black:active > .arrow > div::after,
+.arrow-button.black:active > .arrow > div::before {
+  background-color: #91AC46;
+}
+.arrow-button.black:disabled {
+  color: #899D9D;
+}
+.arrow-button.black:disabled > .arrow > div,
+.arrow-button.black:disabled > .arrow > div::after,
+.arrow-button.black:disabled > .arrow > div::before {
+  background-color: #899D9D;
+}
+
+.arrow {
+  position: absolute;
+  width: 45px;
+  height: 25px;
+  right: -60px;
+  top: 50%;
+}
+.arrow div {
+  position: relative;
+  width: 40px;
+  height: 2px;
+  left: 0;
+  display: block;
+  transition: background 0.2s ease;
+}
+.arrow div::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: -3px;
+  right: -2.5px;
+  transform: rotate(45deg);
+}
+.arrow div::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  top: 3px;
+  right: -2.5px;
+  transform: rotate(-45deg);
+}/*# sourceMappingURL=ArrowButton.css.map */
