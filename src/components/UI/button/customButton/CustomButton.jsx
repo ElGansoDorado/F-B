@@ -1,9 +1,9 @@
 import "./CustomButton.css"
 
-function CustomButton({children, isFill, ...props})
+function CustomButton({children, isFill, onClick, ...props})
 {
     return(
-        <button {...props} className={isFill ? "button-fill" : "button-not-fill"}>
+        <button {...props} onClick={() => onClick()} className={isFill ? "button-fill" : "button-not-fill"}>
             {children}
         </button>
     )

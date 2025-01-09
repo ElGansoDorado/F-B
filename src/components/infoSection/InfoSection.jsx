@@ -4,13 +4,30 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
 import CustomButton from "../UI/button/customButton/CustomButton"
 import CustomInput from "../UI/input/customInput/CustomInput"
+import StatusMessage from "../UI/message/statusMessage/statusMessage"
 
 import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
 import CarouselSection from "./carouselSection/CarouselSection"
+import { useState } from "react"
 
 function InfoSection()
 {
+    const [message, setMessage] = useState()
+    const [isCorrectMessage, setCorrectMessage] = useState()
+
+    function AddMessage(isCorrect)
+    {
+        setCorrectMessage(isCorrect)
+        setMessage(true)
+
+        setTimeout( () => {
+            setMessage(false)
+        }, 5000
+        )
+    }
+
+
     return(
         <main>
             <section id="catalog" className="catalog m-b-60">
@@ -56,10 +73,14 @@ function InfoSection()
                         <CustomInput type="text" placeholder="Имя" isCorrect={false}/>
                         <CustomInput type="email" placeholder="Email" isCorrect={false}/>
 
-                        <CustomButton isFill={true}>Отправить</CustomButton>
+                        <CustomButton onClick={() => AddMessage(true)} isFill={true}>Отправить</CustomButton>
                     </form>
                 </div>
             </section>
+
+            <ul>
+                {message && <StatusMessage isCorrect={isCorrectMessage}/>}
+            </ul>
         </main>
     )
 }
