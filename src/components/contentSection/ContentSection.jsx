@@ -1,11 +1,8 @@
 import "./ContentSection.css"
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowRight} from '@fortawesome/free-solid-svg-icons'
-
 import CustomButton from "../UI/button/customButton/CustomButton"
 import CustomInput from "../UI/input/customInput/CustomInput"
-import StatusMessage from "../UI/message/statusMessage/statusMessage"
+import StatusMessage from "../UI/message/statusMessage/StatusMessage"
 import ArrowButton from "../UI/button/arrowButton/ArrowButton"
 
 import BackImg from "../../assets/back.jpg"
