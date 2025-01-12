@@ -110,37 +110,3 @@
         }
     }
 }
-
-.contacts {
-    height: 465px;
-
-    img {
-        min-height: 465px;
-        max-height: 465px;
-        width: 100%;
-
-        filter: brightness(50%);
-        object-fit: cover;
-
-        position: absolute;
-    }
-
-    h2 {
-        color: #FFF;
-        font: 700 italic 48px/48px "Cormorant";
-        margin-bottom: 16px;
-    }
-
-    p {
-        width: 825px;
-        color: #FFF;
-        font: 400 16px/24px 'Open Sans';
-        text-align: left;
-        margin-bottom: 24px;
-    }
-
-    &-input {
-        display: flex;
-        flex-direction: column;
-    }
-}

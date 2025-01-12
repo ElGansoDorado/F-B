@@ -1,31 +1,15 @@
 import "./ContentSection.css"
 
-import CustomButton from "../UI/button/customButton/CustomButton"
-import CustomInput from "../UI/input/customInput/CustomInput"
-import StatusMessage from "../UI/message/statusMessage/StatusMessage"
 import ArrowButton from "../UI/button/arrowButton/ArrowButton"
 
 import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
 import GallerySection from "./gallerySection/GallerySection"
+import ContactsSection from "./contactsSection/ContactsSection"
 import { useState } from "react"
 
-function InfoSection()
+function ContentSection()
 {
-    const [message, setMessage] = useState()
-    const [isCorrectMessage, setCorrectMessage] = useState()
-
-    function AddMessage(isCorrect)
-    {
-        setCorrectMessage(isCorrect)
-        setMessage(true)
-
-        setTimeout( () => {
-            setMessage(false)
-        }, 5000
-        )
-    }
-
     return(
         <main>
             <section id="catalog" className="catalog m-b-60">
@@ -62,26 +46,10 @@ function InfoSection()
                 </div>
             </section>
 
-            <section id="contacts" className="contacts">
-                <img src={BackImg} alt="" />
-                <div className="box">
-                    <h2>Помочь проекту</h2>
-                    <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
-                    <form action="" className="contacts-input">
-                        <CustomInput type="text" placeholder="Имя" isCorrect={false}/>
-                        <CustomInput type="email" placeholder="Email" isCorrect={false}/>
-
-                        <CustomButton onClick={() => AddMessage(true)} isFill={true}>Отправить</CustomButton>
-                    </form>
-                </div>
-            </section>
-
-            <ul>
-                {message && <StatusMessage isCorrect={isCorrectMessage}/>}
-            </ul>
+            <ContactsSection/>
         </main>
     )
 }
 
 
-export default InfoSection
+export default ContentSection

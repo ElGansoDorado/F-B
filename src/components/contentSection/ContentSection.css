@@ -91,33 +91,4 @@
   font: 400 16px/24px "Open Sans";
   text-align: justify;
   margin-top: 8px;
-}
-
-.contacts {
-  height: 465px;
-}
-.contacts img {
-  min-height: 465px;
-  max-height: 465px;
-  width: 100%;
-  filter: brightness(50%);
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-}
-.contacts h2 {
-  color: #FFF;
-  font: 700 italic 48px/48px "Cormorant";
-  margin-bottom: 16px;
-}
-.contacts p {
-  width: 825px;
-  color: #FFF;
-  font: 400 16px/24px "Open Sans";
-  text-align: left;
-  margin-bottom: 24px;
-}
-.contacts-input {
-  display: flex;
-  flex-direction: column;
 }/*# sourceMappingURL=ContentSection.css.map */

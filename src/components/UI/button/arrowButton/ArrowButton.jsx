@@ -4,7 +4,7 @@ function ArrowButton({ children, isBlack, ...props }) {
     return (
         <button {...props} className={isBlack ? "arrow-button black" : "arrow-button green"}>
             <p>{children}</p>
-            <div class="arrow">
+            <div className="arrow">
                 <div></div>
             </div>
         </button>
