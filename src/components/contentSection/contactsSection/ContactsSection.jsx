@@ -5,18 +5,42 @@ import CustomButton from "../../UI/button/customButton/CustomButton"
 import CustomInput from "../../UI/input/customInput/CustomInput"
 import StatusMessage from "../../UI/message/statusMessage/StatusMessage"
 
-import { useState, useActionState } from "react"
+import { useState, useRef } from "react"
 
 function ContactsSection() {
-    const [message, setMessage] = useState()
-    const [isCorrectMessage, setCorrectMessage] = useState()
+    const [message, setMessage] = useState([])
 
-    function AddMessage(isCorrect) {
-        setCorrectMessage(isCorrect)
-        setMessage(true)
+    const [isNameError, setNameError] = useState(false)
+    const [isEmailError, setEmailError] = useState(false)
+
+    const nameInputRef = useRef()
+    const emailInputRef = useRef()
+
+    function handleSubmit(isCorrect) {
+        if (nameInputRef.current?.value === "") {
+            setNameError(true)
+            console.log("tik")
+            return
+        }
+        if (emailInputRef.current?.value === "") {
+            setEmailError(true)
+            return
+        }
+
+        const min = new Date().getMilliseconds()
+
+        setEmailError(false)
+        setNameError(false)
+
+        setMessage([{date: min, isCorect: isCorrect}, ...message])
+        console.log(min)
+        
+        nameInputRef.current.value = ""
+        emailInputRef.current.value = ""
 
         setTimeout(() => {
-            setMessage(false)
+            console.log(min)
+            setMessage(message.filter((m) => m.date !== min))
         }, 5000
         )
     }
@@ -29,16 +53,16 @@ function ContactsSection() {
                     <h2>Помочь проекту</h2>
                     <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
                     <form action="" className="contacts-input">
-                        <CustomInput type="text" placeholder="Имя" name="name" isCorrect={false} />
-                        <CustomInput type="email" placeholder="Email" name="email" isCorrect={false} />
+                        <CustomInput type="text" placeholder="Имя" name="name" mRef={nameInputRef} isCorrect={isNameError} />
+                        <CustomInput type="email" placeholder="Email" name="email" mRef={emailInputRef} isCorrect={isEmailError} />
 
-                        <CustomButton onClick={() => AddMessage(true)} isFill={true}>Отправить</CustomButton>
+                        <CustomButton onClick={() => handleSubmit(true)} isFill={true}>Отправить</CustomButton>
                     </form>
                 </div>
             </section>
 
-            <ul>
-                {message && <StatusMessage isCorrect={isCorrectMessage} />}
+            <ul className="list-message">
+                {message.map((mes) => {return <li key={mes.date}><StatusMessage isCorrect={mes.isCorect}/></li>})}
             </ul>
         </>
     )

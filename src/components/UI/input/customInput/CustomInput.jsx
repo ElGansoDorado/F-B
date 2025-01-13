@@ -1,11 +1,14 @@
 import "./CustomInput.css"
 
-function CustomInput({isCorrect, ...props})
+function CustomInput({isCorrect, mRef, ...props})
 {
     return(
         <label className="custom-input-box">
             <span className="custom-input-error">{isCorrect && "Недопустимый формат"}</span>
-            <input className={isCorrect ? "custom-input error" : "custom-input"} {...props} required/>
+            <input ref={mRef} 
+                className={isCorrect ? "custom-input error" : "custom-input"} 
+                {...props} 
+                required/>
         </label>
     )
 }

@@ -3,10 +3,7 @@
   width: 400px;
   font-weight: 700;
   background-color: #FFF;
-  position: fixed;
-  right: 10px;
-  bottom: 20px;
-  z-index: 2;
+  position: relative;
   box-shadow: 5px 4px 18px 7px rgba(0, 0, 0, 0.2);
 }
 .message p {
