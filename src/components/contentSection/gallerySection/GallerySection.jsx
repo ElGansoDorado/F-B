@@ -16,16 +16,16 @@ function GallerySection() {
         }
         setCaruselValue(caruselValue - 1)
 
-        Scroll(-295)
+        Scroll(-295.5)
     }
 
     function ScrollingCarouselReight() {
-        if (caruselValue === plantDb.length -2) {
+        if (caruselValue === plantDb.length - 3) {
             return
         }
         setCaruselValue(caruselValue + 1)
 
-        Scroll(296)
+        Scroll(295.5)
     }
 
     function Scroll(value) {
@@ -47,18 +47,10 @@ function GallerySection() {
                         </CarouselItem>
                     })}
                     
-                    <CarouselItem
-                        key={"3425"}
-                        numberImg={plantDb[0].number}
-                        carouselImg={plantDb[0].imgPath}
-                        title={plantDb[0].title}>
-                        {plantDb[0].description}
-                    </CarouselItem>
-                    
                 </div>
                 <div className="carousel-slider">
                     <ArrowButton color={'grey'} onClick={() => ScrollingCarouselLeft()} isRevers={true} />
-                    <h3>{caruselValue} из {plantDb.length - 2}</h3>
+                    <h3>{caruselValue} из {plantDb.length - 3}</h3>
                     <ArrowButton color={'grey'} onClick={() => ScrollingCarouselReight()} />
                 </div>
             </div>
