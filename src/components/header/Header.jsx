@@ -4,25 +4,20 @@ import search from '../../assets/search.svg'
 import logIn from '../../assets/log-in.svg'
 import logo from '../../assets/logo.svg'
 
-import MenuButton from '../UI/button/menuButton/MenuButton'
+import Menu from './menu/Menu'
 
 function Header()
 {
     return(
     <header id="top">
         <div>
-            <div>
+            <div className='r'>
                 <div className="logo">
                     <a href="#top"><img src={logo} alt="logo" /></a>
                 </div>
 
 
-                <ul className="menu">
-                    <MenuButton sectionRef={'#catalog'}>Каталог</MenuButton>
-                    <MenuButton sectionRef={'#gallery'}>Галерея</MenuButton>
-                    <MenuButton sectionRef={'#about'}>О лаборатории</MenuButton>
-                    <MenuButton sectionRef={'#contacts'}>Контакты</MenuButton>
-                </ul>
+                <Menu/>
 
             </div>
 

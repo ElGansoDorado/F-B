@@ -1,8 +1,6 @@
-header
-{
-    & div 
-    {
-        min-height: 60px;
+header {
+    & div {
+        height: 60px;
         max-width: 1440px;
 
         margin: 0 auto;
@@ -11,8 +9,7 @@ header
         justify-content: space-between;
         align-items: center;
 
-        & div
-        {
+        & div {
 
             display: flex;
             gap: 124px;
@@ -20,60 +17,57 @@ header
     }
 }
 
-.logo
-{
+.logo {
     height: 20px;
     width: 65px;
+    position: relative;
+    z-index: 3;
 }
 
-.menu
-{
-    height: 100%;
-
-    display: flex;
-    align-items: center;
-    gap: 60px;
-
-    color: #FFF;
-}
-
-
-.icons
-{
+.icons {
     max-height: 100%;
-    
+
     display: flex;
     justify-content: right;
     gap: 64px;
 
-    & a
-    {
+    position: relative;
+    z-index: 3;
+
+    & a {
         padding: 4px;
         color: #BAE249;
         text-align: center;
 
         transition: color 0.2s ease-in-out;
 
-        img 
-        {
-            width: 24px;
-            height: 24px;
+        img {
+            min-width: 24px;
+            min-height: 24px;
         }
 
-        &:hover
-        {
+        &:hover {
             filter: brightness(75%);
         }
 
-        &:focus
-        {
+        &:focus {
             padding: 3px;
             border: 1px solid #BAE249;
         }
 
-        &:active
-        {
+        &:active {
             filter: brightness(60%);
         }
+    }
+}
+
+@media (max-width: 726px) {
+    .r {
+        flex-direction: row-reverse;
+        gap: 0;
+    }
+
+    .logo {
+        margin-left: 50px;
     }
 }

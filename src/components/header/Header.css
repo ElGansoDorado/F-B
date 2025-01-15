@@ -1,5 +1,5 @@
 header div {
-  min-height: 60px;
+  height: 60px;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -14,14 +14,8 @@ header div div {
 .logo {
   height: 20px;
   width: 65px;
-}
-
-.menu {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  color: #FFF;
+  position: relative;
+  z-index: 3;
 }
 
 .icons {
@@ -29,6 +23,8 @@ header div div {
   display: flex;
   justify-content: right;
   gap: 64px;
+  position: relative;
+  z-index: 3;
 }
 .icons a {
   padding: 4px;
@@ -37,8 +33,8 @@ header div div {
   transition: color 0.2s ease-in-out;
 }
 .icons a img {
-  width: 24px;
-  height: 24px;
+  min-width: 24px;
+  min-height: 24px;
 }
 .icons a:hover {
   filter: brightness(75%);
@@ -49,4 +45,14 @@ header div div {
 }
 .icons a:active {
   filter: brightness(60%);
+}
+
+@media (max-width: 726px) {
+  .r {
+    flex-direction: row-reverse;
+    gap: 0;
+  }
+  .logo {
+    margin-left: 50px;
+  }
 }/*# sourceMappingURL=Header.css.map */

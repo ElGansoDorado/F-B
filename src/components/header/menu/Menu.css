@@ -1,0 +1,84 @@
+.burger {
+  display: none;
+}
+
+.menu {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  color: #FFF;
+}
+
+@media (max-width: 726px) {
+  .burger {
+    height: 25px;
+    width: 25px;
+    display: block;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .burger::after, .burger::before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #FFF;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .burger span {
+    height: 2px;
+    width: 100%;
+    background-color: #FFF;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    transition: all 0.3s ease 0s;
+  }
+  .burger:hover::before, .burger:hover::after, .burger:hover span {
+    background-color: #BAE249;
+  }
+  .burger:active::before, .burger:active::after, .burger:active span {
+    background-color: #688B05;
+  }
+  .burger::before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .burger.active::before {
+    transform: rotate(45deg);
+    top: 12px;
+  }
+  .burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 11px;
+  }
+  .burger.active span {
+    transform: scale(0);
+  }
+  .burger.active:hover::before, .burger.active:hover::after {
+    background-color: #FF0000;
+  }
+  .burger.active:active::before, .burger.active:active::after {
+    background-color: #990000;
+  }
+  .menu {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 2;
+    background-color: #1D2F30;
+    flex-direction: column;
+    padding-top: 80px;
+    transition: all 0.3s ease 0s;
+  }
+  .menu.active {
+    top: 0;
+  }
+}/*# sourceMappingURL=Menu.css.map */

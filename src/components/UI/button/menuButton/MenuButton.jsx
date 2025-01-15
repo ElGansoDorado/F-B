@@ -1,10 +1,10 @@
 import './MenuButton.css'
 
-function MenuButton({children, sectionRef})
+function MenuButton({children, sectionRef, ...props})
 {
     return(
         <li className='menu-button'>
-            <a href={sectionRef}>{children}</a>    
+            <a {...props} href={sectionRef}>{children}</a>    
         </li>
     )
 }
