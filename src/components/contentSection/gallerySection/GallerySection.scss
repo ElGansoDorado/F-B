@@ -22,24 +22,11 @@
     {
         display: flex;
         justify-content: center;
-        gap: 30px;
+        align-items: center;
+        gap: 20px;
 
+        font: 700 24px/36px 'Cormorant';
         color: #FFF;
-
-        &-button
-        {
-            transition: color 0.2s ease-in-out;
-
-            &:hover
-            {
-                color: #BAE249;
-            }
-
-            &:active
-            {
-                color: #688B05;
-            }
-        }
     }
 }
 

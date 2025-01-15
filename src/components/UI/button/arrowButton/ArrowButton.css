@@ -72,6 +72,38 @@
 .arrow-button.black:disabled > .arrow > div::before {
   background-color: #899D9D;
 }
+.arrow-button.grey {
+  color: #899D9D;
+}
+.arrow-button.grey > .arrow > div,
+.arrow-button.grey > .arrow > div::after,
+.arrow-button.grey > .arrow > div::before {
+  background-color: #899D9D;
+}
+.arrow-button.grey:hover {
+  color: #91AC46;
+}
+.arrow-button.grey:hover > .arrow > div,
+.arrow-button.grey:hover > .arrow > div::after,
+.arrow-button.grey:hover > .arrow > div::before {
+  background-color: #91AC46;
+}
+.arrow-button.grey:active {
+  color: #688B05;
+}
+.arrow-button.grey:active > .arrow > div,
+.arrow-button.grey:active > .arrow > div::after,
+.arrow-button.grey:active > .arrow > div::before {
+  background-color: #688B05;
+}
+.arrow-button.grey:disabled {
+  color: #899D9D;
+}
+.arrow-button.grey:disabled > .arrow > div,
+.arrow-button.grey:disabled > .arrow > div::after,
+.arrow-button.grey:disabled > .arrow > div::before {
+  background-color: #899D9D;
+}
 
 .arrow {
   position: absolute;
@@ -105,4 +137,8 @@
   top: 3px;
   right: -2.5px;
   transform: rotate(-45deg);
+}
+
+.reverse {
+  transform: scaleX(-1);
 }/*# sourceMappingURL=ArrowButton.css.map */

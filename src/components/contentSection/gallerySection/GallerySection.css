@@ -16,15 +16,8 @@
 .carousel-slider {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
+  gap: 20px;
+  font: 700 24px/36px "Cormorant";
   color: #FFF;
-}
-.carousel-slider-button {
-  transition: color 0.2s ease-in-out;
-}
-.carousel-slider-button:hover {
-  color: #BAE249;
-}
-.carousel-slider-button:active {
-  color: #688B05;
 }/*# sourceMappingURL=GallerySection.css.map */

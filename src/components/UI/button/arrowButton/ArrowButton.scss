@@ -86,6 +86,46 @@
             }
         }
     }
+
+    &.grey
+    {
+        color: #899D9D;
+        >.arrow>div,
+        >.arrow>div::after,
+        >.arrow>div::before {
+            background-color: #899D9D;
+        }
+
+        &:hover {
+            color: #91AC46;
+    
+            >.arrow>div,
+            >.arrow>div::after,
+            >.arrow>div::before {
+                background-color: #91AC46;
+            }
+        }
+    
+        &:active {
+            color: #688B05;
+    
+            >.arrow>div,
+            >.arrow>div::after,
+            >.arrow>div::before {
+                background-color: #688B05;
+            }
+        }
+    
+        &:disabled {
+            color: #899D9D;
+    
+            >.arrow>div,
+            >.arrow>div::after,
+            >.arrow>div::before {
+                background-color: #899D9D;
+            }
+        }
+    }
 }
 
 .arrow {
@@ -124,4 +164,8 @@
             transform: rotate(-45deg);
         }
     }
+}
+
+.reverse{
+    transform: scaleX(-1);
 }

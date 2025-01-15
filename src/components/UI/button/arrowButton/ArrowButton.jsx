@@ -1,8 +1,8 @@
 import "./ArrowButton.css"
 
-function ArrowButton({ children, isBlack, ...props }) {
+function ArrowButton({ children, color, isRevers = false, ...props }) {
     return (
-        <button {...props} className={isBlack ? "arrow-button black" : "arrow-button green"}>
+        <button {...props} className={isRevers ? `arrow-button ${color} reverse` : `arrow-button ${color}`}>
             <p>{children}</p>
             <div className="arrow">
                 <div></div>

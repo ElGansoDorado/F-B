@@ -22,16 +22,15 @@ function ContactsSection() {
             console.log("tik")
             return
         }
+        setNameError(false)
+        
         if (emailInputRef.current?.value === "") {
             setEmailError(true)
             return
         }
-
-        const min = new Date().getMilliseconds()
-
         setEmailError(false)
-        setNameError(false)
-
+        
+        const min = new Date().getMilliseconds()
         setMessage([{date: min, isCorect: isCorrect}, ...message])
         console.log(min)
         
