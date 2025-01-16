@@ -16,8 +16,8 @@ function ContentSection()
                 <img className="img-back" src={BackImg} alt="imgBack" />
                 <div className="box">
                     <div className="catalog-info">
-                        <h1>Крупнейшая коллекция природных артефактов</h1>
-                        <p>Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
+                        <h1 className="catalog-info-title">Крупнейшая коллекция природных артефактов</h1>
+                        <p className="catalog-info-desription">Являясь всего лишь частью общей картины, интерактивные прототипы, которые представляют собой яркий пример европейского типа политической и социальной культуры.</p>
                         <ArrowButton color={"green"}>Исследовать</ArrowButton>
                     </div>
                 </div>

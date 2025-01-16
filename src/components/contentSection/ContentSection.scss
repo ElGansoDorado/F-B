@@ -37,13 +37,13 @@
         width: 688px;
         color: #FFF;
 
-        h1 {
+        &-title {
             font-family: Cormorant;
             font: 700 60px/60px 'Cormorant';
             text-decoration-skip-ink: none;
         }
 
-        p {
+        &-desription {
             font-weight: 400 16px/24px 'Open Sans';
             text-decoration-skip-ink: none;
             margin: 22px 0;
@@ -52,7 +52,7 @@
 }
 
 .about {
-    height: 575px;
+    height: max-content;
 
     &-title {
         font: 700 italic 48px/48px Cormorant;
@@ -61,7 +61,7 @@
     }
 
     &-container {
-        height: 493px;
+        height: max-content;
         width: 100%;
 
         display: grid;
@@ -109,4 +109,38 @@
             }
         }
     }
+}
+
+@media (max-width: 726px) {
+    .box {
+        width: 320px;
+        margin: 0 32px;
+    }
+
+    .catalog {
+        &-info {
+            width: 256px;
+            &-title {
+                font: 700 48px/48px 'Cormorant';
+            }
+
+            &-desription {
+                display: none;
+            }
+        }
+    }
+
+    .about {
+        &-title {}
+
+        &-container {
+            display: flex;
+            flex-direction: column;
+
+            &-text {
+                height: 493px;
+            }
+        }
+    }
+
 }

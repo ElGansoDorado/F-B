@@ -33,13 +33,13 @@
   width: 688px;
   color: #FFF;
 }
-.catalog-info h1 {
+.catalog-info-title {
   font-family: Cormorant;
   font: 700 60px/60px "Cormorant";
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
 }
-.catalog-info p {
+.catalog-info-desription {
   font-weight: 400 16px/24px "Open Sans";
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
@@ -47,7 +47,8 @@
 }
 
 .about {
-  height: 575px;
+  height: -moz-max-content;
+  height: max-content;
 }
 .about-title {
   font: 700 italic 48px/48px Cormorant;
@@ -55,7 +56,8 @@
   margin-bottom: 30px;
 }
 .about-container {
-  height: 493px;
+  height: -moz-max-content;
+  height: max-content;
   width: 100%;
   display: grid;
   grid-template-columns: 74% 22.4%;
@@ -91,4 +93,27 @@
   font: 400 16px/24px "Open Sans";
   text-align: justify;
   margin-top: 8px;
+}
+
+@media (max-width: 726px) {
+  .box {
+    width: 320px;
+    margin: 0 32px;
+  }
+  .catalog-info {
+    width: 256px;
+  }
+  .catalog-info-title {
+    font: 700 48px/48px "Cormorant";
+  }
+  .catalog-info-desription {
+    display: none;
+  }
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container-text {
+    height: 493px;
+  }
 }/*# sourceMappingURL=ContentSection.css.map */
