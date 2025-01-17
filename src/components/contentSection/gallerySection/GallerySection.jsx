@@ -1,6 +1,11 @@
 import "./GallerySection.css"
 import { plantDb } from "../../../db"
 
+import img1 from "../../../assets/img_c1.png"
+import img2 from "../../../assets/img_c2.png"
+import img3 from "../../../assets/img_c3.png"
+import img4 from "../../../assets/img_c4.png"
+
 import CarouselItem from "../carouselItem/CarouselItem"
 import ArrowButton from "../../UI/button/arrowButton/ArrowButton"
 
@@ -9,6 +14,11 @@ import { useRef, useState} from "react"
 function GallerySection() {
     const [caruselValue, setCaruselValue] = useState(1)
     const scrolBar = useRef()
+
+    const imgPath = {
+        id: [0, 1, 2, 3, 4, 5, 6, 7],
+        path: [img1, img2, img3, img4, img1, img2, img3, img4]
+    }
 
     function ScrollingCarouselLeft() {
         if (caruselValue === 1) {
@@ -37,13 +47,13 @@ function GallerySection() {
         <section id="gallery" className="gallery m-b-60">
             <div className="box">
                 <div ref={scrolBar} className="carousel">
-                    {plantDb.map((plant) => {
+                    {imgPath.id.map((id) => {
                         return <CarouselItem
-                            key={plant.number}
-                            numberImg={plant.number}
-                            carouselImg={plant.imgPath}
-                            title={plant.title}>
-                            {plant.description}
+                            key={plantDb[id].number}
+                            numberImg={plantDb[id].number}
+                            carouselImg={imgPath.path[id]}
+                            title={plantDb[id].title}>
+                            {plantDb[id].description}
                         </CarouselItem>
                     })}
                     
