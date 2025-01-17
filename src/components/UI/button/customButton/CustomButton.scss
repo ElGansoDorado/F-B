@@ -5,8 +5,7 @@ $transition-color: color 0.4s ease-in-out;
 $transition-backg: background 0.4s ease-in-out;
 
 .button {
-    &-fill
-    {
+    &-fill {
         max-width: $max-width;
         max-height: $max-height;
         padding: $padding;
@@ -16,14 +15,17 @@ $transition-backg: background 0.4s ease-in-out;
         color: #0B1919;
         background-color: #BAE249;
         font-weight: 700;
-        &:hover {
-            background-color: #91AC46;
+
+        @media (hover: hover) {
+            &:hover {
+                background-color: #91AC46;
+            }
         }
-    
+
         &:active {
             background-color: #688B05;
         }
-    
+
         &:disabled {
             opacity: 0.5;
             color: #1D2F30;
@@ -31,8 +33,7 @@ $transition-backg: background 0.4s ease-in-out;
         }
     }
 
-    &-not-fill
-    {
+    &-not-fill {
         max-width: $max-width;
         max-height: $max-height;
         padding: $padding;
@@ -42,17 +43,19 @@ $transition-backg: background 0.4s ease-in-out;
         color: #BAE249;
         border: 1px solid #BAE249;
 
-        &:hover {
-            color: #0B1919;
-            background-color: #BAE249;
+        @media (hover: hover) {
+            &:hover {
+                color: #0B1919;
+                background-color: #BAE249;
+            }
         }
-    
+
         &:active {
             color: #0B1919;
             background-color: #688B05;
             border-color: #688B05;
         }
-    
+
         &:disabled {
             color: #899D9D;
             border-color: #899D9D;

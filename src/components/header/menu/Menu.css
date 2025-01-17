@@ -37,9 +37,13 @@
     left: 0;
     transition: all 0.3s ease 0s;
   }
+}
+@media (max-width: 726px) and (hover: hover) {
   .burger:hover::before, .burger:hover::after, .burger:hover span {
     background-color: #BAE249;
   }
+}
+@media (max-width: 726px) {
   .burger:active::before, .burger:active::after, .burger:active span {
     background-color: #688B05;
   }
@@ -60,9 +64,13 @@
   .burger.active span {
     transform: scale(0);
   }
+}
+@media (max-width: 726px) and (hover: hover) {
   .burger.active:hover::before, .burger.active:hover::after {
     background-color: #FF0000;
   }
+}
+@media (max-width: 726px) {
   .burger.active:active::before, .burger.active:active::after {
     background-color: #990000;
   }

@@ -43,10 +43,13 @@
             transition: all 0.3s ease 0s;
         }
 
-        &:hover::before,
-        &:hover::after,
-        &:hover span {
-            background-color: #BAE249;
+        @media (hover: hover) {
+
+            &:hover::before,
+            &:hover::after,
+            &:hover span {
+                background-color: #BAE249;
+            }
         }
 
         &:active::before,
@@ -78,9 +81,12 @@
                 transform: scale(0);
             }
 
-            &:hover::before,
-            &:hover::after {
-                background-color: #FF0000;
+            @media (hover: hover) {
+
+                &:hover::before,
+                &:hover::after {
+                    background-color: #FF0000;
+                }
             }
 
             &:active::before,

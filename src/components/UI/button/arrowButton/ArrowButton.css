@@ -16,30 +16,6 @@
 .arrow-button.green > .arrow > div::before {
   background-color: #BAE249;
 }
-.arrow-button.green:hover {
-  color: #91AC46;
-}
-.arrow-button.green:hover > .arrow > div,
-.arrow-button.green:hover > .arrow > div::after,
-.arrow-button.green:hover > .arrow > div::before {
-  background-color: #91AC46;
-}
-.arrow-button.green:active {
-  color: #688B05;
-}
-.arrow-button.green:active > .arrow > div,
-.arrow-button.green:active > .arrow > div::after,
-.arrow-button.green:active > .arrow > div::before {
-  background-color: #688B05;
-}
-.arrow-button.green:disabled {
-  color: #899D9D;
-}
-.arrow-button.green:disabled > .arrow > div,
-.arrow-button.green:disabled > .arrow > div::after,
-.arrow-button.green:disabled > .arrow > div::before {
-  background-color: #899D9D;
-}
 .arrow-button.black {
   color: #0B1919;
 }
@@ -48,13 +24,15 @@
 .arrow-button.black > .arrow > div::before {
   background-color: #0B1919;
 }
-.arrow-button.black:hover {
-  color: #688B05;
-}
-.arrow-button.black:hover > .arrow > div,
-.arrow-button.black:hover > .arrow > div::after,
-.arrow-button.black:hover > .arrow > div::before {
-  background-color: #688B05;
+@media (hover: hover) {
+  .arrow-button.black:hover {
+    color: #688B05;
+  }
+  .arrow-button.black:hover > .arrow > div,
+  .arrow-button.black:hover > .arrow > div::after,
+  .arrow-button.black:hover > .arrow > div::before {
+    background-color: #688B05;
+  }
 }
 .arrow-button.black:active {
   color: #91AC46;
@@ -64,14 +42,6 @@
 .arrow-button.black:active > .arrow > div::before {
   background-color: #91AC46;
 }
-.arrow-button.black:disabled {
-  color: #899D9D;
-}
-.arrow-button.black:disabled > .arrow > div,
-.arrow-button.black:disabled > .arrow > div::after,
-.arrow-button.black:disabled > .arrow > div::before {
-  background-color: #899D9D;
-}
 .arrow-button.grey {
   color: #899D9D;
 }
@@ -80,26 +50,36 @@
 .arrow-button.grey > .arrow > div::before {
   background-color: #899D9D;
 }
-.arrow-button.grey:hover {
-  color: #91AC46;
+@media (hover: hover) {
+  .arrow-button.green:hover, .arrow-button.grey:hover {
+    color: #91AC46;
+  }
+  .arrow-button.green:hover > .arrow > div,
+  .arrow-button.green:hover > .arrow > div::after,
+  .arrow-button.green:hover > .arrow > div::before, .arrow-button.grey:hover > .arrow > div,
+  .arrow-button.grey:hover > .arrow > div::after,
+  .arrow-button.grey:hover > .arrow > div::before {
+    background-color: #91AC46;
+  }
 }
-.arrow-button.grey:hover > .arrow > div,
-.arrow-button.grey:hover > .arrow > div::after,
-.arrow-button.grey:hover > .arrow > div::before {
-  background-color: #91AC46;
-}
-.arrow-button.grey:active {
+.arrow-button.green:active, .arrow-button.grey:active {
   color: #688B05;
 }
-.arrow-button.grey:active > .arrow > div,
+.arrow-button.green:active > .arrow > div,
+.arrow-button.green:active > .arrow > div::after,
+.arrow-button.green:active > .arrow > div::before, .arrow-button.grey:active > .arrow > div,
 .arrow-button.grey:active > .arrow > div::after,
 .arrow-button.grey:active > .arrow > div::before {
   background-color: #688B05;
 }
-.arrow-button.grey:disabled {
+.arrow-button.green:disabled, .arrow-button.black:disabled, .arrow-button.grey:disabled {
   color: #899D9D;
 }
-.arrow-button.grey:disabled > .arrow > div,
+.arrow-button.green:disabled > .arrow > div,
+.arrow-button.green:disabled > .arrow > div::after,
+.arrow-button.green:disabled > .arrow > div::before, .arrow-button.black:disabled > .arrow > div,
+.arrow-button.black:disabled > .arrow > div::after,
+.arrow-button.black:disabled > .arrow > div::before, .arrow-button.grey:disabled > .arrow > div,
 .arrow-button.grey:disabled > .arrow > div::after,
 .arrow-button.grey:disabled > .arrow > div::before {
   background-color: #899D9D;

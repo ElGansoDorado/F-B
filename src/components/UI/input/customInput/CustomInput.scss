@@ -28,15 +28,18 @@
 
     transition: color 0.4s ease-in-out;
     transition: background 0.4s ease-in-out;
-
-    &:hover
+    
+    @media (hover: hover)
     {
-        color: #0B1919;
-        background-color: #899D9D;
-
-        &::placeholder
+        &:hover
         {
-            color: #FFF;
+            color: #0B1919;
+            background-color: #899D9D;
+    
+            &::placeholder
+            {
+                color: #FFF;
+            }
         }
     }
 

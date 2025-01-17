@@ -22,15 +22,17 @@
   transition: color 0.4s ease-in-out;
   transition: background 0.4s ease-in-out;
 }
-.custom-input:hover {
-  color: #0B1919;
-  background-color: #899D9D;
-}
-.custom-input:hover::-moz-placeholder {
-  color: #FFF;
-}
-.custom-input:hover::placeholder {
-  color: #FFF;
+@media (hover: hover) {
+  .custom-input:hover {
+    color: #0B1919;
+    background-color: #899D9D;
+  }
+  .custom-input:hover::-moz-placeholder {
+    color: #FFF;
+  }
+  .custom-input:hover::placeholder {
+    color: #FFF;
+  }
 }
 .custom-input:focus {
   border: 1px solid #00FF00;

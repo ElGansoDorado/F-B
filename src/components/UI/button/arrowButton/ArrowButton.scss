@@ -7,118 +7,89 @@
     transition: color 0.2s ease-in-out;
     position: relative;
 
-    &.green
-    {
+    &.green {
         color: #BAE249;
+
         >.arrow>div,
         >.arrow>div::after,
         >.arrow>div::before {
             background-color: #BAE249;
         }
-
-        &:hover {
-            color: #91AC46;
-    
-            >.arrow>div,
-            >.arrow>div::after,
-            >.arrow>div::before {
-                background-color: #91AC46;
-            }
-        }
-    
-        &:active {
-            color: #688B05;
-    
-            >.arrow>div,
-            >.arrow>div::after,
-            >.arrow>div::before {
-                background-color: #688B05;
-            }
-        }
-    
-        &:disabled {
-            color: #899D9D;
-    
-            >.arrow>div,
-            >.arrow>div::after,
-            >.arrow>div::before {
-                background-color: #899D9D;
-            }
-        }
     }
 
-    &.black
-    {
+    &.black {
         color: #0B1919;
+
         >.arrow>div,
         >.arrow>div::after,
         >.arrow>div::before {
             background-color: #0B1919;
         }
 
-        &:hover {
-            color: #688B05;
-    
-            >.arrow>div,
-            >.arrow>div::after,
-            >.arrow>div::before {
-                background-color: #688B05;
+        @media (hover: hover) {
+            &:hover {
+                color: #688B05;
+
+                >.arrow>div,
+                >.arrow>div::after,
+                >.arrow>div::before {
+                    background-color: #688B05;
+                }
             }
         }
-    
+
         &:active {
             color: #91AC46;
-    
+
             >.arrow>div,
             >.arrow>div::after,
             >.arrow>div::before {
                 background-color: #91AC46;
             }
         }
-    
-        &:disabled {
-            color: #899D9D;
-    
-            >.arrow>div,
-            >.arrow>div::after,
-            >.arrow>div::before {
-                background-color: #899D9D;
-            }
-        }
     }
 
-    &.grey
-    {
+    &.grey {
         color: #899D9D;
+
         >.arrow>div,
         >.arrow>div::after,
         >.arrow>div::before {
             background-color: #899D9D;
         }
+    }
 
-        &:hover {
-            color: #91AC46;
-    
-            >.arrow>div,
-            >.arrow>div::after,
-            >.arrow>div::before {
-                background-color: #91AC46;
+    &.green,
+    &.grey {
+        @media (hover: hover) {
+            &:hover {
+                color: #91AC46;
+
+                >.arrow>div,
+                >.arrow>div::after,
+                >.arrow>div::before {
+                    background-color: #91AC46;
+                }
             }
         }
-    
+
         &:active {
             color: #688B05;
-    
+
             >.arrow>div,
             >.arrow>div::after,
             >.arrow>div::before {
                 background-color: #688B05;
             }
         }
-    
+    }
+
+    &.green,
+    &.black,
+    &.grey {
         &:disabled {
             color: #899D9D;
-    
+
             >.arrow>div,
             >.arrow>div::after,
             >.arrow>div::before {
@@ -166,6 +137,6 @@
     }
 }
 
-.reverse{
+.reverse {
     transform: scaleX(-1);
 }

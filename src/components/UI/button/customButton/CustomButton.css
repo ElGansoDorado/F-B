@@ -8,8 +8,10 @@
   background-color: #BAE249;
   font-weight: 700;
 }
-.button-fill:hover {
-  background-color: #91AC46;
+@media (hover: hover) {
+  .button-fill:hover {
+    background-color: #91AC46;
+  }
 }
 .button-fill:active {
   background-color: #688B05;
@@ -28,9 +30,11 @@
   color: #BAE249;
   border: 1px solid #BAE249;
 }
-.button-not-fill:hover {
-  color: #0B1919;
-  background-color: #BAE249;
+@media (hover: hover) {
+  .button-not-fill:hover {
+    color: #0B1919;
+    background-color: #BAE249;
+  }
 }
 .button-not-fill:active {
   color: #0B1919;

@@ -46,8 +46,10 @@ header {
             min-height: 24px;
         }
 
-        &:hover {
-            filter: brightness(75%);
+        @media (hover: hover) {
+            &:hover {
+                filter: brightness(75%);
+            }
         }
 
         &:focus {

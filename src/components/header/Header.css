@@ -36,8 +36,10 @@ header div div {
   min-width: 24px;
   min-height: 24px;
 }
-.icons a:hover {
-  filter: brightness(75%);
+@media (hover: hover) {
+  .icons a:hover {
+    filter: brightness(75%);
+  }
 }
 .icons a:focus {
   padding: 3px;
