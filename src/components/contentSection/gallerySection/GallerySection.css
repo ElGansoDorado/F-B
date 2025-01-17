@@ -5,8 +5,8 @@
 
 .carousel {
   display: flex;
-  grid-template-columns: 257 257 257 257;
   gap: 40px;
+  width: 100%;
   margin-bottom: 26px;
   overflow-x: scroll;
 }
@@ -20,4 +20,11 @@
   gap: 20px;
   font: 700 24px/36px "Cormorant";
   color: #FFF;
+}
+
+@media (max-width: 726px) {
+  .carousel {
+    max-width: 257px;
+    margin: 0 auto 26px;
+  }
 }/*# sourceMappingURL=GallerySection.css.map */

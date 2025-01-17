@@ -16,7 +16,7 @@ function GallerySection() {
         }
         setCaruselValue(caruselValue - 1)
 
-        Scroll(-295.5)
+        Scroll(-295)
     }
 
     function ScrollingCarouselReight() {
@@ -25,7 +25,7 @@ function GallerySection() {
         }
         setCaruselValue(caruselValue + 1)
 
-        Scroll(295.5)
+        Scroll(295)
     }
 
     function Scroll(value) {
