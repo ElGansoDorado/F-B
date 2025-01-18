@@ -1,25 +1,24 @@
-.gallery
-{
+.gallery {
     height: 565px;
     background-color: #1D2F30;
-    
+
 }
 
-.carousel
-{
+.carousel {
     display: flex;
     gap: 40px;
     width: 100%;
     margin-bottom: 26px;
     overflow-x: scroll;
+    padding: 0 1px;
 
-    &::-webkit-scrollbar
-    {
+    scroll-snap-type: x mandatory;
+
+    &::-webkit-scrollbar {
         display: none;
     }
 
-    &-slider
-    {
+    &-slider {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -27,6 +26,10 @@
 
         font: 700 24px/36px 'Cormorant';
         color: #FFF;
+
+        &-point {
+            display: none;
+        }
     }
 }
 
@@ -34,5 +37,27 @@
     .carousel {
         max-width: 257px;
         margin: 0 auto 26px;
+
+        &-slider {
+            display: none;
+
+            &-point {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                & span {
+                    width: 10px;
+                    height: 10px;
+                    background-color: #0B1919;
+                    border-radius: 50%;
+
+                    &.active 
+                    {
+                        background-color: #BAE249;
+                    }
+                }
+            }
+        }
     }
 }

@@ -6,6 +6,8 @@
     max-width: 255px;
     border: 1px solid #0B1919;
 
+    scroll-snap-align: start;
+
     &-img
     {
         min-height: 180px;

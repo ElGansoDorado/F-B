@@ -23,17 +23,16 @@ function ContactsSection() {
             return
         }
         setNameError(false)
-        
+
         if (emailInputRef.current?.value === "") {
             setEmailError(true)
             return
         }
         setEmailError(false)
-        
+
         const min = new Date().getMilliseconds()
-        setMessage([{date: min, isCorect: isCorrect}, ...message])
-        console.log(min)
-        
+        setMessage([{ date: min, isCorect: isCorrect }, ...message])
+
         nameInputRef.current.value = ""
         emailInputRef.current.value = ""
 
@@ -61,7 +60,7 @@ function ContactsSection() {
             </section>
 
             <ul className="list-message">
-                {message.map((mes) => {return <li key={mes.date}><StatusMessage isCorrect={mes.isCorect}/></li>})}
+                {message.map((mes) => { return <li key={mes.date}><StatusMessage isCorrect={mes.isCorect} /></li> })}
             </ul>
         </>
     )

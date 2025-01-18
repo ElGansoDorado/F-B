@@ -9,7 +9,7 @@ import img4 from "../../../assets/img_c4.png"
 import CarouselItem from "../carouselItem/CarouselItem"
 import ArrowButton from "../../UI/button/arrowButton/ArrowButton"
 
-import { useRef, useState} from "react"
+import { useRef, useState, useEffect } from "react"
 
 function GallerySection() {
     const [caruselValue, setCaruselValue] = useState(1)
@@ -25,7 +25,6 @@ function GallerySection() {
             return
         }
         setCaruselValue(caruselValue - 1)
-
         Scroll(-295)
     }
 
@@ -34,7 +33,6 @@ function GallerySection() {
             return
         }
         setCaruselValue(caruselValue + 1)
-
         Scroll(295)
     }
 
@@ -43,10 +41,19 @@ function GallerySection() {
         scrolBar.current.scrollLeft += value
     }
 
+    useEffect(() => {
+        const element = document.querySelector("div#scroll");
+
+        element.addEventListener("scrollend", (event) => {
+            setCaruselValue(Math.round(scrolBar.current.scrollLeft / 297) + 1)
+        });
+    }, [])
+
+
     return (
         <section id="gallery" className="gallery m-b-60">
             <div className="box">
-                <div ref={scrolBar} className="carousel">
+                <div id="scroll" ref={scrolBar} className="carousel">
                     {imgPath.id.map((id) => {
                         return <CarouselItem
                             key={plantDb[id].number}
@@ -56,12 +63,16 @@ function GallerySection() {
                             {plantDb[id].description}
                         </CarouselItem>
                     })}
-                    
+
                 </div>
                 <div className="carousel-slider">
                     <ArrowButton color={'grey'} onClick={() => ScrollingCarouselLeft()} isRevers={true} />
                     <h3>{caruselValue} из {plantDb.length - 3}</h3>
                     <ArrowButton color={'grey'} onClick={() => ScrollingCarouselReight()} />
+                </div>
+
+                <div className="carousel-slider-point">
+                    {imgPath.id.map((id) => {return <span key={"point" + id} className={id === caruselValue -1 ? "active" : ""}/>})}
                 </div>
             </div>
         </section>
