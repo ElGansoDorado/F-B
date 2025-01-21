@@ -8,7 +8,7 @@ function CustomInput({isCorrect, mRef, ...props})
             <input ref={mRef} 
                 className={isCorrect ? "custom-input error" : "custom-input"} 
                 {...props} 
-                required/>
+                />
         </label>
     )
 }

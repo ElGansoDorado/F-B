@@ -12,9 +12,9 @@ function Footer()
         <footer>
             <div className='footer-list'>
                 <ul className='footer-list-networks'>
-                    <MenuButton sectionRef={"https://www.youtube.com/"}> <FontAwesomeIcon icon={faYoutube} /> </MenuButton>
-                    <MenuButton sectionRef={"https://www.instagram.com/"}> <FontAwesomeIcon icon={faInstagram} /> </MenuButton>
-                    <MenuButton sectionRef={"https://www.facebook.com/"}> <FontAwesomeIcon icon={faSquareFacebook} /> </MenuButton>
+                    <MenuButton sectionRef={"https://www.youtube.com/@mrredgid7771"}> <FontAwesomeIcon icon={faYoutube} /> </MenuButton>
+                    <MenuButton sectionRef={"https://www.instagram.com/den_yakovchik/"}> <FontAwesomeIcon icon={faInstagram} /> </MenuButton>
+                    <MenuButton sectionRef={"https://www.facebook.com/profile.php?id=100046817203362&locale=ru_RU"}> <FontAwesomeIcon icon={faSquareFacebook} /> </MenuButton>
                     <MenuButton sectionRef={"https://x.com/"}> <FontAwesomeIcon icon={faTwitter} /> </MenuButton>
                 </ul>
             </div>

@@ -16,19 +16,34 @@ function ContactsSection() {
     const nameInputRef = useRef()
     const emailInputRef = useRef()
 
-    function handleSubmit(isCorrect) {
-        if (nameInputRef.current?.value === "") {
+    function CheckName() {
+        if (nameInputRef.current?.value === "" || nameInputRef.current?.value.length < 2 || nameInputRef.current?.value.length > 20)
+        {
             setNameError(true)
-            console.log("tik")
-            return
+            return true
         }
-        setNameError(false)
+        else
+        {
+            setNameError(false)
+        }
+    }
 
-        if (emailInputRef.current?.value === "") {
+    function CheckEmail() {
+        if (emailInputRef.current?.value.search(/^[\w-.]*[@]{1}[\w-.]*\.[a-z]{2,}$/gi) === 0)
+        {
+            setEmailError(false)
+        }
+        else
+        {
             setEmailError(true)
+            return true
+        }
+    }
+
+    function handleSubmit(isCorrect) {
+        if (CheckName() || CheckEmail()) {
             return
         }
-        setEmailError(false)
 
         const min = new Date().getMilliseconds()
         setMessage([{ date: min, isCorect: isCorrect }, ...message])
@@ -37,7 +52,6 @@ function ContactsSection() {
         emailInputRef.current.value = ""
 
         setTimeout(() => {
-            console.log(min)
             setMessage(message.filter((m) => m.date !== min))
         }, 5000
         )
@@ -50,11 +64,11 @@ function ContactsSection() {
                 <div className="box">
                     <h2>Помочь проекту</h2>
                     <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
-                    <form action="" className="contacts-input">
-                        <CustomInput type="text" placeholder="Имя" name="name" mRef={nameInputRef} isCorrect={isNameError} />
-                        <CustomInput type="email" placeholder="Email" name="email" mRef={emailInputRef} isCorrect={isEmailError} />
+                    <form className="contacts-input">
+                        <CustomInput type="text" onChange={() => CheckName()} placeholder="Имя" name="name" mRef={nameInputRef} isCorrect={isNameError} />
+                        <CustomInput type="email" onChange={() => CheckEmail()} placeholder="Email" name="email" mRef={emailInputRef} isCorrect={isEmailError} />
 
-                        <CustomButton onClick={() => handleSubmit(true)} isFill={true}>Отправить</CustomButton>
+                        <CustomButton type="button" onClick={() => handleSubmit(true)} isFill={true}>Отправить</CustomButton>
                     </form>
                 </div>
             </section>
