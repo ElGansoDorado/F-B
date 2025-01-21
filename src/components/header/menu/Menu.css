@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 726px) {
+  body.lock {
+    overflow: hidden;
+  }
   .burger {
     height: 25px;
     width: 25px;
