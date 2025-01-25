@@ -6,7 +6,7 @@ import logo from '../../assets/logo.svg'
 
 import Menu from './menu/Menu'
 
-function Header()
+function Header({onChange})
 {
     return(
     <header id="top">
@@ -25,7 +25,7 @@ function Header()
                 <a href='#'>
                     <img src={search} alt="search" />
                 </a>
-                <a href="#">
+                <a href="#" onClick={() => onChange("login")}>
                     <img src={logIn} alt="logIn" />
                 </a>
             </div>

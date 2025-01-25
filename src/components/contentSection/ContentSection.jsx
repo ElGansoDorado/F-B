@@ -6,7 +6,6 @@ import BackImg from "../../assets/back.jpg"
 import ImgCards from "../../assets/card_5.jpg"
 import GallerySection from "./gallerySection/GallerySection"
 import ContactsSection from "./contactsSection/ContactsSection"
-import { useState } from "react"
 
 function ContentSection()
 {

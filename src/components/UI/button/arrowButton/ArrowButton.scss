@@ -7,6 +7,11 @@
     transition: color 0.2s ease-in-out;
     position: relative;
 
+    p
+    {
+        width: max-content;
+    }
+
     &.green {
         color: #BAE249;
 
