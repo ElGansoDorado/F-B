@@ -6,6 +6,7 @@ import logo from "../../assets/logo.svg"
 import PasswordInput from "../UI/input/passwordInput/PasswordInput"
 import CustomButton from "../UI/button/customButton/CustomButton"
 import ArrowButton from "../UI/button/arrowButton/ArrowButton"
+import CustomCheckbox from "../UI/input/customCheckbox/customCheckbox"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons'
@@ -54,14 +55,12 @@ function PasswordSection({ onChange, isLogin = true }) {
                     }
 
                     <div className="password-section-checkbox">
-                        <label>
-                            <input type="checkbox" name="" id="ch" /> <p><span>запомнить меня</span></p>
-                        </label>
+                        <CustomCheckbox id="c"> Запомнить меня </CustomCheckbox>
 
                         <p><span>Забыли пароль?</span></p>
                     </div>
 
-                    <CustomButton isFill={true}>{login ? 'Зарегестрировать акк' : 'Войти'}</CustomButton>
+                    <CustomButton style={{width: 370}} isFill={true}>{login ? 'Зарегестрировать акк' : 'Войти'}</CustomButton>
                 </form>
                 <p className="password-section-description"><span onClick={() => setLogin(true)}>Зарегистрируйтесь</span> или <span onClick={() => { setLogin(false) }}>войдите</span> в аккаунт</p>
                 <ArrowButton color={"grey"} isRevers="true" onClick={() => onChange("main")}>вернуться на главную</ArrowButton>
