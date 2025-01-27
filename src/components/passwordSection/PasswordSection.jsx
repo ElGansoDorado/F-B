@@ -61,7 +61,7 @@ function PasswordSection({ onChange, isLogin = true }) {
                         <p><span>Забыли пароль?</span></p>
                     </div>
 
-                    <CustomButton isFill={true}>{login ? 'Создать' : 'Войти'}</CustomButton>
+                    <CustomButton isFill={true}>{login ? 'Зарегестрировать акк' : 'Войти'}</CustomButton>
                 </form>
                 <p className="password-section-description"><span onClick={() => setLogin(true)}>Зарегистрируйтесь</span> или <span onClick={() => { setLogin(false) }}>войдите</span> в аккаунт</p>
                 <ArrowButton color={"grey"} isRevers="true" onClick={() => onChange("main")}>вернуться на главную</ArrowButton>

@@ -1,17 +1,14 @@
-$max-width: 145px;
-$max-height: 45px;
-$padding: 10.5px 28.5px;
-$transition-color: color 0.4s ease-in-out;
-$transition-backg: background 0.4s ease-in-out;
-
 .button {
-    &-fill {
-        max-width: $max-width;
-        max-height: $max-height;
-        padding: $padding;
-        transition: $transition-color;
-        transition: $transition-backg;
+    &-fill,
+    &-not-fill {
+        height: 45px;
+        width: max-content;
+        padding: 10.5px 28.5px;
+        transition: color 0.4s ease-in-out;
+        transition: background 0.4s ease-in-out;
+    }
 
+    &-fill {
         color: #0B1919;
         background-color: #BAE249;
         font-weight: 700;
@@ -34,12 +31,6 @@ $transition-backg: background 0.4s ease-in-out;
     }
 
     &-not-fill {
-        max-width: $max-width;
-        max-height: $max-height;
-        padding: $padding;
-        transition: $transition-color;
-        transition: $transition-backg;
-
         color: #BAE249;
         border: 1px solid #BAE249;
 
