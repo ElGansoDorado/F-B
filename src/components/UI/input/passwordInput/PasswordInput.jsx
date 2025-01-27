@@ -1,13 +1,15 @@
 import "./PasswordInput.css"
 
-function PasswordInput({children, name, description, ...props})
+function PasswordInput({children, name, description, onShow, ...props})
 {
     return(
-        <div className="password-input">
-            <label htmlFor={name} className="icon">{children}</label>
-            <div className="password-input-box">
-                <input id={name} {...props} type="text" />
-                <p data-tooltip={description}>i</p>
+        <div className="registration-field">
+            <label htmlFor={name} className="registration-field-icon">{children}</label>
+            <div className="registration-field-box">
+                <input className="registration-field-input" id={name} {...props}/>
+                <div onClick={() => onShow()} className="registration-field-help">
+                    <p data-tooltip={description}>i</p>
+                </div>
             </div>
         </div>
     )

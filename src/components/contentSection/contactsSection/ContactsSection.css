@@ -5,7 +5,7 @@
   min-height: 465px;
   max-height: 465px;
   width: 100%;
-  filter: brightness(50%);
+  filter: brightness(50%) grayscale(100%);
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;

@@ -1,5 +1,5 @@
 import "./ContactsSection.css"
-import BackImg from "../../../assets/back.jpg"
+import BackImg2 from "../../../assets/back2.jpg"
 
 import CustomButton from "../../UI/button/customButton/CustomButton"
 import CustomInput from "../../UI/input/customInput/CustomInput"
@@ -60,7 +60,7 @@ function ContactsSection() {
     return (
         <>
             <section id="contacts" className="contacts">
-                <img src={BackImg} alt="" />
+                <img src={BackImg2} alt="" />
                 <div className="box">
                     <h2>Помочь проекту</h2>
                     <p>Равным образом, экономическая повестка сегодняшнего дня не даёт нам иного выбора, кроме определения прогресса профессионального сообщества. Как принято считать, элементы политического процесса рассмотрены исключительно в разрезе маркетинговых и финансовых предпосылок. </p>
