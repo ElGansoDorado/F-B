@@ -6,7 +6,7 @@ import logo from "../../assets/logo.svg"
 import PasswordInput from "../UI/input/passwordInput/PasswordInput"
 import CustomButton from "../UI/button/customButton/CustomButton"
 import ArrowButton from "../UI/button/arrowButton/ArrowButton"
-import CustomCheckbox from "../UI/input/customCheckbox/СustomCheckbox"
+import CustomCheckbox from "../UI/input/customCheckbox/CustomCheckbox"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons'
